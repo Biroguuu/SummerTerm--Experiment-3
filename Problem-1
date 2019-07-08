@@ -1,0 +1,53 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	// declare variables needed
+	double number [15];   
+	int integer, maxnumber,minnumber, largestnumber, total, average,smallestnumber;
+	
+	cout << "Please enter 15 integers: " << endl; 
+	
+	// for loop input of numbers in the array
+	for(integer = 0;integer < 15 ;integer++)
+		number[integer] = 0.0;
+	for(integer = 0; integer < 15 ; integer++)
+		cin >> number[integer];
+	for(integer = 0; integer < 15 ; integer++)
+		cout << number[integer] << ", ";
+		cout << endl; 
+	
+	// for sum,avg, small,largest
+	
+	total = 0;
+		for (integer = 0;integer < 15; integer++)
+		total = total + number[integer];
+		cout <<" Total =  " << total << endl;
+	
+	average = total / 15;
+		cout << " Average =  " << average << endl;
+	
+	maxnumber = 0;
+		for (integer = 1;integer < 15; integer++)
+			if (number[maxnumber] < number[integer])
+			maxnumber = integer;
+	
+	largestnumber = number[maxnumber];
+		cout << " Largest number =  " << largestnumber << endl;
+	
+	minnumber = 0;
+		for (integer = 1; integer < 15; integer++)
+			if (number[maxnumber] > number [integer])
+			minnumber = integer;
+			smallestnumber = number[minnumber];
+		cout << " Smallest number =  " << smallestnumber << endl; 	
+		
+
+_getch();
+
+return 0;
+
+}

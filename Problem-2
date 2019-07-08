@@ -1,0 +1,60 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std;
+
+int main () 
+
+{
+
+   double provA[7]; 
+   double provB[7]; 
+   double provC[7]; 
+   double value1,value2,value3;
+  
+  cout << "--Please enter the Temperature for each province in a week-- \n";
+       
+  for ( int i = 1; i <=7; i++ ) 
+	{
+    	cout<<"Province A, Day " << i << ": ";
+        cin >> provA[i];
+   }
+
+   for ( int i = 1; i <=7; i++ ) 
+   {
+   	cout<<"Province B, Day " << i << ": ";
+	cin >> provB[i];
+   }
+   
+   
+   for ( int i = 1; i <=7; i++ ) 
+   {
+	cout<<"Province C, Day " << i << ": ";
+	cin >> provC[i];
+   }
+   
+   cout << endl << "Displaying Values:" << endl;
+ 
+   for ( int j = 1; j <= 7; j++ )
+    {
+      value1 = provA[j];
+      cout <<"Province A, Day "<< j <<" = "<< value1 << endl;
+   	}
+
+   for ( int j = 1; j <= 7; j++ ) 
+   {
+      value2 = provB[j];
+   	  cout <<"Province B, Day "<< j <<" = "<< value2 << endl;
+   }
+
+   for ( int j = 1; j <= 7; j++ ) 
+   {
+    value3 = provC[j];
+    cout <<"Province C, Day "<< j <<" = "<< value3<< endl;
+   }
+ 
+_getch();
+
+ return 0;
+}
